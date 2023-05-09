@@ -36,12 +36,11 @@ function App(props) {
     // setTimeout(() => {
     //   setAlert(null)
     // }, 3000);
-    
   };
-  // setInterval(() => { 
+  // setInterval(() => {
   // }, 2000);
-  
-  const toggleMode = () => { 
+
+  const toggleMode = () => {
     if (mode.backgroundColor === "#FFF") {
       setMode({ backgroundColor: "#676464", color: "#FFF" });
       document.body.style.backgroundColor = "#676464";
@@ -53,7 +52,7 @@ function App(props) {
     }
   };
 
-  const changeTheme = (e) => { 
+  const changeTheme = (e) => {
     if (e.target.value === "danger") {
       // document.body.style.backgroundColor = "#dc3545";
       setMode({ backgroundColor: "#dc3545", color: "black" });
@@ -87,7 +86,6 @@ function App(props) {
           changeTheme={changeTheme}
         ></Navbar>
         <Alerts alert={alert} />
-        {/* <div> */}
         <div className="container">
           <Routes>
             <Route
@@ -113,10 +111,7 @@ function App(props) {
             ></Route>
           </Routes>
         </div>
-        {/* </div> */}
       </Router>
-
-      {/* <Alerts alert={alert} /> */}
     </div>
   );
 }

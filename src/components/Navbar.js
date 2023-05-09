@@ -13,9 +13,9 @@ export default function Navbar(props) {
         className={`navbar navbar-expand-lg bg-body-dark navbar-dark  bg-dark`}
       >
         <div className="container-fluid">
-          <a className="navbar-brand" href="/">
-            {props.name}
-          </a>
+          <Link className="navbar-brand text-white" to="/">
+            <b>{props.name}</b>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -33,7 +33,7 @@ export default function Navbar(props) {
                 <Link
                   className="nav-link active"
                   aria-current="page"
-                  to="/forms"
+                  to="/"
                 >
                   {props.homeText}
                 </Link>
