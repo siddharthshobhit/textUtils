@@ -15,7 +15,7 @@ function App(props) {
   ];
 
   let navObj = {
-    name: "Siddhu",
+    name: "TextUtils",
     homeText: "Home",
     aboutText: "About",
   };
@@ -89,17 +89,6 @@ function App(props) {
         <div className="container">
           <Routes>
             <Route
-              path="/forms"
-              element={
-                <Forms
-                  header="Enter Text To Analyze"
-                  reqProps={mode}
-                  showAlert={showAlert}
-                />
-              }
-            ></Route>
-            <Route path="/about" element={<About reqProps={mode} />}></Route>
-            <Route
               path="/"
               element={
                 <Forms
@@ -109,6 +98,17 @@ function App(props) {
                 />
               }
             ></Route>
+            <Route path="/about" element={<About reqProps={mode} />}></Route>
+            {/* <Route
+              path="/"
+              element={
+                <Forms
+                  header="Enter Text To Analyze"
+                  reqProps={mode}
+                  showAlert={showAlert}
+                />
+              }
+            ></Route> */}
           </Routes>
         </div>
       </Router>
