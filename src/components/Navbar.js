@@ -13,7 +13,7 @@ export default function Navbar(props) {
         className={`navbar navbar-expand-lg bg-body-dark navbar-dark  bg-dark`}
       >
         <div className="container-fluid">
-          <Link className="navbar-brand text-white" to="/">
+          <Link className="navbar-brand text-white" to="/textUtils">
             <b>{props.name}</b>
           </Link>
           <button
@@ -33,7 +33,7 @@ export default function Navbar(props) {
                 <Link
                   className="nav-link active"
                   aria-current="page"
-                  to="/"
+                  to="/textUtils"
                 >
                   {props.homeText}
                 </Link>

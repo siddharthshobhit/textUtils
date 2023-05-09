@@ -89,7 +89,7 @@ function App(props) {
         <div className="container">
           <Routes>
             <Route
-              path="/"
+              path="/textUtils"
               element={
                 <Forms
                   header="Enter Text To Analyze"
